@@ -1,3 +1,3 @@
 # Wedding Website
 
-Website with information for my wedding
+A Google App Engine website with information for my wedding
