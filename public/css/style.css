@@ -1,0 +1,85 @@
+/* Globals */
+a,
+a:focus,
+a:hover {
+  /*color: #fff;*/
+}
+
+html,
+body {
+  color: #fff;
+  height: 100%;
+  text-align: center;
+  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+}
+
+/* Nav */
+nav.navbar {
+  background-color: #249AF6;
+}
+
+/*nav.btn-group-md {
+  position: absolute;
+  left: 15px;
+  top: 50px;
+  width: 40px;
+}
+
+nav.btn-group-md a.btn.btn-fab {
+  background-color: #03a9f4;
+  color: #DFDFDF;
+  float: left;
+  margin-bottom: 10px;
+}*/
+
+/* Content */
+div.site-wrapper {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1024px;
+
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+div.jumbotron.info {
+  color: #555;
+
+}
+
+/* Media queries */
+@media (min-height: 600px) {
+  div.jumbotron.info {
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  div.site-wrapper {
+    left: 50%;
+    margin-left: -512px;
+  }
+}
+
+@media (min-width: 567px) and (max-width: 768px) {
+  .container {
+    width: 560px;
+  }
+  .navbar-nav {
+    float: left;
+    margin: 0;
+  }
+  .navbar-nav>li {
+    float: left;
+  }
+}

@@ -4,14 +4,20 @@
     <meta charset="utf-8" />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
     <link rel="stylesheet" href="jspm_packages/github/twbs/bootstrap@3.3.6/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="jspm_packages/github/fezVrasta/bootstrap-material-design@0.5.7/dist/css/bootstrap-material-design.min.css" />
+    <link rel="stylesheet" href="jspm_packages/github/fezVrasta/bootstrap-material-design@0.5.7/dist/css/ripples.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body aurelia-app>
     <script src="jspm_packages/system.js"></script>
     <script src="config.js"></script>
     <script>
+      System.import('jquery');
       System.import('bootstrap');
+      System.import('bootstrap-material');
       System.import('aurelia-bootstrapper');
     </script>
   </body>

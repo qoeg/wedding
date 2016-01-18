@@ -1,16 +1,31 @@
 <template>
-  <div class="site-wrapper">
-    <div class="site-wrapper-inner">
-      <div class="cover-container">
-        <div class="inner cover">
-          <router-view></router-view>
-        </div>
-        <div class="mastfoot">
-          <div class="inner">
-            <p>05/29/2016 - Boston, MA</p>
+  <div class="site-wrapper" style.bind="style">
+    <!-- <nav class="btn-group-md">
+      <a href="#home" class="btn btn-fab" title="Home">
+        <i class="material-icons">home</i>
+      </a>
+      <a href="#directions" class="btn btn-fab" title="Directions">
+        <i class="material-icons">directions</i>
+      </a>
+      <a href="#hotel" class="btn btn-fab" title="Hotel Blocks">
+        <i class="material-icons">hotel</i>
+      </a>
+    </nav> -->
+    <section class="container">
+      <div class="row">
+        <nav class="navbar">
+          <div class="container">
+            <ul class="nav navbar-nav">
+              <li class="${row.isActive ? 'active' : ''}" repeat.for="row of router.navigation">
+                <a href.bind="row.href"><i class="material-icons">${row.config.name}</i> ${row.title}<div class="ripple-container"></div></a>
+              </li>
+            </ul>
           </div>
-        </div>
+        </nav>
       </div>
-    </div>
-  </div>
+      <div class="row">
+        <router-view></router-view>
+      </div>
+    </section>
+  </section>
 </template>
